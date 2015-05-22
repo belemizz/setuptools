@@ -12,5 +12,9 @@ apt-get -y install python-sympy
 apt-get -y install python-nose
 apt-get -y install pylint
 apt-get -y install python-sphinx
+apt-get -y install python-psycopg2
+
 pip install Theano
+pip install more-itertools
+
 
