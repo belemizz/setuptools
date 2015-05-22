@@ -17,6 +17,7 @@
 (el-get-bundle pymacs)
 (el-get-bundle sr-speedbar)
 (el-get-bundle recentf-ext)
+(el-get-bundle python-mode)
 
 ;; BASIC KEYBIND SETTING ;;
 ;; C-h -> backspace
@@ -37,12 +38,10 @@
 ;; C-c b -> sr-speedbar-toggle
 (global-set-key "\C-c\ b" 'sr-speedbar-toggle)
 
-
 ;;;; Appearance ;;;;
 ;; font
-(set-face-attribute 'default nil
-		    :family "Ricty Diminished"
-		    :height 100)
+(set-face-attribute 'default nil :family "Ricty Diminished" :height 100)
+;(set-face-attribute 'default nil :family "Menlo" :height 140)
 
 ;; startup message
 (setq inhibit-startup-message t)
@@ -54,7 +53,6 @@
 ;;;; PYTHON  ;;;;
 ;; python-mode
 ;; see http://emacswiki.org/emacs/ProgrammingWithPythonModeDotEl
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/python-mode")
 (autoload 'python-mode "python-mode" "Python editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
@@ -68,8 +66,22 @@
 (pymacs-load "ropemacs" "rope-")
 
 ;; mozc
-(add-to-list 'load-path "/usr/share/emacs24/site-lisp/emacs-mozc/")
-(require 'mozc)
-(set-language-environment "japanese")
-(setq default-input-method "japanese-mozc")
-(setq mozc-candidate-style 'overlay)
+;;(add-to-list 'load-path "/usr/share/emacs24/site-lisp/emacs-mozc/")
+;;(require 'mozc)
+;;(set-language-environment "japanese")
+;;(setq default-input-method "japanese-mozc")
+;;(setq mozc-candidate-style 'overlay)
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (wombat))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
