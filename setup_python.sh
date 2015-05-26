@@ -1,3 +1,4 @@
+## execute with sudo
 apt-get -y install python
 apt-get -y install python-pip
 apt-get -y install ipython
