@@ -1,6 +1,7 @@
-#apt-get update
-#apt-get -y install postgresql
-#apt-get -y install pgadmin3
+## exucute with sudo ##
+apt-get update
+apt-get -y install postgresql
+apt-get -y install pgadmin3
 
 mkdir mimic_setup
 cd mimic_setup
@@ -13,4 +14,5 @@ cp /media/sf_Vbox_share/mimic2cdb-2.6-Definitions.tar.gz .
 cd ..
 cd ..
 
-## execute ./import.sh as a local user
+## execute without sudo
+# ./import.sh
