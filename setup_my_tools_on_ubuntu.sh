@@ -28,6 +28,3 @@
 #sudo apt-get update 
 #sudo apt-get -y install google-chrome-stable
 
-## postgresql ##
-apt-get -y install postgresql
-apt-get -y install pgadmin3
