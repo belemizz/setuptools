@@ -1,3 +1,4 @@
+## execute with sudo
 mkdir ~/.fonts
 wget https://github.com/yascentur/RictyDiminished/archive/master.zip
 unzip master.zip
