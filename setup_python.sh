@@ -16,5 +16,3 @@ apt-get -y install python-psycopg2
 
 pip install Theano
 pip install more-itertools
-
-
