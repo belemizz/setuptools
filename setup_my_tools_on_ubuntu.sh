@@ -14,7 +14,7 @@ sudo apt-get -y install google-chrome-stable
 
 ## emacs24.5
 apt-get -y build-dep emacs24
-# Need Posix setup
+# While the installing process, you’ll be asked to configure the Postfix.
 wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
 tar -xf emacs-24.5.tar.gz
 cd emacs-24.5
