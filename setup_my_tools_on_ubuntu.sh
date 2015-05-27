@@ -6,10 +6,9 @@ apt-get -y install guake
 apt-get -y install terminator
 apt-get -y install byobu
 apt-get -y install bzr
-apt-get -y install build-dep
-apt-get -y install emacs24
 
 ## emacs24.5
+apt-get -y build-dep emacs24
 wget http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.gz
 tar -xf emacs-24.5.tar.gz
 cd emacs-24.5
