@@ -8,9 +8,9 @@ apt-get -y install bzr
 
 ## chrome ##
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get update 
-sudo apt-get -y install google-chrome-stable
+sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+apt-get update 
+apt-get -y install google-chrome-stable
 
 ## emacs24.5
 apt-get -y build-dep emacs24
