@@ -1,9 +1,7 @@
-## execute with sudo
-apt-get update
-apt-get -y install build-essential
-apt-get -y install linux-headers-generic
-apt-get -y install git
+sudo apt-get update
+sudo apt-get -y install build-essential
+sudo apt-get -y install linux-headers-generic
+sudo apt-get -y install git
 
-## execute without sudo
-#git clone https://github.com/belemizz/setuptools
+git clone https://github.com/belemizz/setuptools
 
