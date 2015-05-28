@@ -8,6 +8,7 @@ cd mimic_setup
 
 sudo cp /media/sf_Vbox_share/MIMIC-Importer-2.6.tar.gz .
 sudo cp /media/sf_Vbox_share/mimic2cdb-2.6-00.tar.gz .
+sudo cp /media/sf_Vbox_share/mimic2cdb-2.6-01.tar.gz .
 sudo cp /media/sf_Vbox_share/mimic2cdb-2.6-Definitions.tar.gz .
 sudo chown kimitake *.tar.gz
 sudo chmod 777 *.tar.gz
