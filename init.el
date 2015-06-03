@@ -14,17 +14,16 @@
 (el-get-bundle auto-complete)
 (el-get-bundle evil)
 (el-get-bundle jedi)
-(el-get-bundle pymacs)
 (el-get-bundle sr-speedbar)
 (el-get-bundle recentf-ext)
 (el-get-bundle python-mode)
+(el-get-bundle pymacs)
 
 ;; BASIC KEYBIND SETTING ;;
 ;; C-h -> backspace
 (global-set-key "\C-h" 'delete-backward-char)
 ;; C-tab -> previous buffer
 (global-set-key (kbd "<C-tab>") 'previous-buffer)
-
 ;; backtab (shift-tab) -> next window
 (global-set-key (kbd "<backtab>") 'next-multiframe-window)
 
@@ -40,9 +39,11 @@
 
 ;;;; Appearance ;;;;
 ;; font
-(set-face-attribute 'default nil :family "Ricty Diminished" :height 100)
+(set-face-attribute 'default nil :family "Ricty Diminished Discord" :height 80)
 ;(set-face-attribute 'default nil :family "Menlo" :height 140)
 
+;; tool bar
+(tool-bar-mode -1)
 ;; startup message
 (setq inhibit-startup-message t)
 ;; line number
@@ -85,3 +86,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
